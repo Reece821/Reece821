@@ -10,7 +10,8 @@ def run(scpa, fd):
         fd.write(str(mess))
         fd.write('Sent request nr %s (exch id=%s)\n' % (send_count, mess.hdr.exch_id))
         time.sleep(1.0)
-
+# I Changed some things 7/22/21 10AM
+# only this 
     def TxWaitRx(msg):
         scpa.send(msg)
         fd.write(str(msg) + '\n')
